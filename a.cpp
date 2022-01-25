@@ -2,18 +2,29 @@
  * @author Sagor
  */
 
-#include<bits/stdc++.h>
+#define SAGOR
+
+#include <map>
+#include <set>
+#include <cmath>
+#include <queue>
+#include <stack>
+#include <vector>
+#include <iomanip>
+#include <cstring>
+#include <iostream>
+#include <algorithm>
 
 using namespace std;
 #define gap                        ' '
 #define EPS                        1e-9
-#define P_INF                      2e9+17
-#define N_INF                     -2e9-17
+#define P_INF                      1e9+17
+#define N_INF                     -1e9-17
 #define MOD                        1000000007
 #define PI                         2*acos(0.0)
 #define All(x)                     x.begin(),x.end()
 #define Mem(Name, type)            memset(Name, type, sizeof(Name))
-#define TIMESTAMP(msg) cout << "[" msg "] Time = " << clock() * 1.0 / CLOCKS_PER_SEC << endl
+#define TIMESTAMP(msg)             cout << "[" msg "] Time = " << clock() * 1.0 / CLOCKS_PER_SEC << endl
 
 
 template<typename T>
@@ -28,30 +39,33 @@ ostream &operator<<(ostream &os, const vector<T> &v) {
     return os;
 }
 
-
 /*-----------------------------------------------------^-----------------------------------------------------*/
-void Problem() {
-    //Here You Go...
-    for (int i = 0; i < 3; ++i) {
-        int a;
-        cin>>a;
-        cout<<a<<endl;
-    }
+
+void Problem(){
+    // Your code goes here !!
+    int a, b;
+    cin >> a >> b;
+    cout << a << gap << b << endl;
 }
 
 
 int main() {
-    freopen("input.txt", "r", stdin);       //  File input ...
-//     freopen("output.txt", "w", stdout);		//  File output ...
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
+    #ifdef SAGOR 
+        freopen("input.txt", "r", stdin);
+        // freopen("output.txt", "w", stdout);
+    #endif
 
     int n = 1;
 //    cin >> n;            // For Multiple testcases...
     for (int i = 0; i < n; ++i) {
         Problem();
     }
-    TIMESTAMP("End:");
+
+    #ifdef SAGOR
+        TIMESTAMP("End:");
+    #endif
     return 0;
 }
